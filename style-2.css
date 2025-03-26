@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: violet;
+
+  color: rgb(31, 1, 1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-menu {
+  letter-spacing: 0.2rem;
+}
+.container {
+  flex-direction: column;
+}
+
+/* Class Utility */
+.flex {
+  display: flex;
+}
+.pd-1 {
+  padding: 1rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.center {
+  place-items: center;
+}
+
+/* Components */
+.btn {
+  all: inherit;
+  position: relative;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+
+  background: rgb(170, 4, 4);
+  color: inherit;
+}
+
+.btn[aria-label] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0.09375rem;
+    transform: rotate(0deg);
+    background-color: rgb(88, 95, 88);
+  }
+
+  &::after {
+    content: attr(aria-label);
+    position: relative;
+    background: rgb(185, 181, 174);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    z-index: 1;
+  }
+}
+
+@media (width <= 375px) {
+  :root {
+    width: 90px;
+  }
+}

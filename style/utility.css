@@ -33,12 +33,25 @@
     --max-width: 80rem;
   }
 
-  .desktop-only {
-    display: initial;
-  }
+}
 
-  .even-collums{
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
+.desktop-only {
+  display: initial;
+}
+
+.even-collums{
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.gap-1{
+  gap: 1rem;
 }
