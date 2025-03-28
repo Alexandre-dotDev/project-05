@@ -24,7 +24,7 @@
   --max-width: 375px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
 
-  border: solid violet;
+  /* border: solid violet; */
   margin-inline: auto;
 }
 
@@ -33,11 +33,11 @@
     --max-width: 80rem;
   }
 
+  .desktop-only {
+    display: initial;
+  }
 }
 
-.desktop-only {
-  display: initial;
-}
 
 .even-collums{
   grid-auto-flow: column;
@@ -47,11 +47,16 @@
 .flex{
   display: flex;
 }
-
+.items-center{
+  align-items: center;
+}
 .grid{
   display: grid;
 }
 
 .gap-1{
   gap: 1rem;
+}
+.gap-1\.5{
+  gap: 1.5rem;
 }
